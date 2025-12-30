@@ -1,6 +1,7 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import { ToastContainer } from 'react-toastify'
+import '../node_modules/react-toastify/dist/unstyled.mjs'
 import Home from './pages/Home'
 import Collection from './pages/Collection'
 import About from './pages/About'
@@ -13,6 +14,12 @@ import Orders from './pages/Orders'
 import Navbar from './components/Navbar'
 import Fotter from './components/Fotter'
 import SearchBar from './components/SearchBar'
+
+
+
+// export const backendUrl = import.meta.env.VITE_BACKEND_URL
+export const backendUrl ="http://localhost:5000/"
+
 const App = () => {
   return (
     <div className='px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]'>
